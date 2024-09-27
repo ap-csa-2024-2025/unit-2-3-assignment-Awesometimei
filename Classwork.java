@@ -10,9 +10,9 @@ public class Classwork
 
   public static String firstLastN(String skibidi, int n)
   {
-    String part1 = skibidi.substring(0, n);
-    String part2 = skibidi.substring(skibidi.length()-1);
-    return part1 + part2;
+    String firstN = skibidi.substring(0,n);
+    String lastN = skibidi.substring(skibidi.length()-n);
+    return firstN + lastN;
   }
 
   public static String delEnd(String sigma, int n)
