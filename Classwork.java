@@ -4,6 +4,8 @@ public class Classwork
   {
     System.out.println(firstLastN("dictionary", 1));
     System.out.println(delEnd("bakaboy", 5));
+    System.out.println(compareLower("bakaboy", "DANNY"));
+    System.out.println(lengthFirst("What is up guys. It's Danny"));
   }
 
   public static String firstLastN(String skibidi, int n)
@@ -19,9 +21,18 @@ public class Classwork
     return mwah;
   }
 
-  public static String compareLower(String sigma, String skibidi)
+  public static int compareLower(String sigma, String skibidi)
   {
-
-    return sigma;
+    sigma = sigma.toLowerCase();
+    skibidi = skibidi.toLowerCase();
+    int no = skibidi.compareTo(sigma);
+    return no;
   }
+
+  public static int lengthFirst(String sentence)
+  {
+    int length = sentence.indexOf(" ");
+    return length; 
+  }
+
 }
